@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--FONTAWESOME-->
+  <script src="https://kit.fontawesome.com/3ad766ec21.js" crossorigin="anonymous"></script>
+
+  <!--GOOGLE FONTS Cinzel, serif && Orbitron, sans-serif-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+  <!--HAMBURGUER MENU-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+
+  <!--MAIN CSS-->
+  <link rel="stylesheet" href="./index.css">
+  
+  <link rel="shortcut icon" href="#">
+  <title>Crafts</title>
+</head>
+
+
+<body data-dark>
+
+  <!--HEADER-->
+  <header class="header">
+    <h1>Sparx27 Crafts</h1>
+  </header>
+
+  <!--H_MENU-->
+  <button class="hamburger hamburger--vortex btn-menu" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <!--MENU PANEL-->
+  <aside class="panel">
+    <nav class="menu">
+      <a href="#section1" data-scroll-spy>Digital Clock and Alarm</a>
+      <a href="#section2" data-scroll-spy>Keyword shorctus</a>
+      <a href="#section4" data-scroll-spy>Responsive Elements</a>
+      <a href="#section5" data-scroll-spy>Responsive web page tester</a>
+      <a href="#section6" data-scroll-spy>Device Detector</a>
+      <a href="#section7" data-scroll-spy>Network Detector</a>
+      <a href="#section8" data-scroll-spy>Webcam Detector</a>
+      <a href="#section9" data-scroll-spy>User Geolocation</a>
+      <a href="#section10" data-scroll-spy>Search Filter</a>
+      <a href="#section11" data-scroll-spy>Lottery</a>
+      <a href="#section12" data-scroll-spy>Slider</a>
+      <a href="#section13" data-scroll-spy>Smart Video</a>
+      <a href="#section14" data-scroll-spy>Form Validations</a>
+      <a href="#section15" data-scroll-spy>Text Speaker</a>
+    </nav>
+  </aside>
+
+  <!--SCROLL BUTTON-->
+    <button class="scroll-btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+  <!--DARK THEME BUTTON-->
+  <button class="theme-btn">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+
+  <main>
+    <div class="thanks">
+      <p>Thanks Jonathan MirCha for the JavaScript Course</p>
+    </div>
+
+    <!--CLOCK SECTION-->
+    <section id="section1" class="section" data-dark data-scroll-spy>
+      <h2>Digital Clock and Alarm</h2>
+      <div class="clockBox">
+        <div class="clock"></div>
+        <div class="clockSettings">
+          <button class="turnClock">Show Clock</button>
+          <button class="shutClock">Close Clock</button>
+          <button class="setAlarm">Set Alarm</button>
+          <button class="shutAlarm">Desactivate Alarm</button>
+        </div>
+      </div>
+    </section>
+  
+    <!--BALL STAGE-->
+    <section id="section2" class="section" data-dark data-scroll-spy>
+      <h2>Keyword shorctus</h2>
+  
+      <div class="stage">
+        <div class="ball"></div>
+      </div>
+  
+      <h3>Press <span style="color: var(--red); font-size: 1.35rem;"><strong>w d s a</strong></span> to move the ball</h3>
+    </section>
+  
+    <!--RESPONSIVE ELEMENTS-->
+    <section id="section4" class="section" data-dark data-scroll-spy>
+      <h2>Responsive Elements to avoid consuming unecessary phone internet</h2>
+      <p>If window's width is less than 800px, external objects are replaced by links</p>
+      <div id="youtube"></div>
+      <div id="gmaps"></div>
+    </section>
+  
+    <!--WEB RESPONSIVE TESTER-->
+    <section id="section5" class="section" data-dark data-scroll-spy>
+      <h2>Responsive web page tester</h2>
+      <p>Drop a valid webpage url and choose width and height, then it gets opened with js code<br>Note: The URL has to start with https:// || http://</p>
+  
+      <form id="wform">
+        <input type="url" placeholder="URL" name="page" pattern="^http[s]{0,1}://[\S]+" required>
+        <br>
+        <input type="text" placeholder="Width" name="w" required>
+        <br>
+        <input type="text" placeholder="Height" name="h" required>
+        <br>
+        <div class="tester-btns-box">
+          <input type="submit" name="open" value="Open page">
+        <input type="button" name="close" value="Close page">
+        </div>
+      </form>
+    </section>
+  
+    <!--DEVICE DETECTOR-->
+    <section id="section6" class="section" data-dark data-scroll-spy>
+      <h2>Device Detector</h2>
+      <p>The device's system will be detected and a correct download button will be placed</p>
+      <div id="user-device"></div>
+    </section>
+  
+    <!--NETWORK STATUS-->
+    <section id="section7" class="section" data-dark data-scroll-spy>
+      <h2>NetWork Status</h2>
+      <div class="netexplain">
+        <p>Turn off your internet to watch the effect</p>
+      </div>
+    </section>
+  
+    <!--WEBCAM DETECTOR-->
+    <section id="section8" class="section" data-dark data-scroll-spy>
+      <h2>Webcam Detector</h2>
+      <div class="webbox">
+        <video id="webcam"></video>
+      </div>
+      <div class="weboptions">
+        <button class="play-webcam">Start Webcam</button>
+      </div>
+    </section>
+  
+    <!--GEOLOCATION DETECTOR-->
+    <section id="section9" class="section" data-dark data-scroll-spy>
+      <h2>User Geolocation</h2>
+      <div id="geo"></div>
+    </section>
+  
+    <!--SEARCH FILTER-->
+    <section id="section10" class="section" data-dark data-scroll-spy>
+      <h2>Search Filter</h2>
+      <input type="search" placeholder="Search..." class="card-filter">
+  
+      <article class="cards">
+        <figure class="card">
+          <img src="https://picsum.photos/id/9/200/200" alt="Tech" />
+          <figcaption>Tech</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://picsum.photos/id/237/200/200" alt="Animals" />
+          <figcaption>Animals</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://picsum.photos/id/22/200/200" alt="People" />
+          <figcaption>People</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://picsum.photos/id/164/200/200" alt="Arch" />
+          <figcaption>Architecture</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://picsum.photos/id/12/200/200" alt="Nature" />
+          <figcaption>Nature</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://picsum.photos/id/24/200/200" alt="Any" />
+          <figcaption>Any</figcaption>
+        </figure>
+      </article>
+    </section>
+  
+    <!--DRAW-->
+    <section id="section11" class="section" data-dark data-scroll-spy>
+      <h2>Lottery</h2>
+      <ul class="players">
+        <li class="player">Player 1</li>
+        <li class="player">Player 2</li>
+        <li class="player">Player 3</li>
+        <li class="player">Player 4</li>
+        <li class="player">Player 5</li>
+        <li class="player">Player 6</li>
+        <li class="player">Player 7</li>
+        <li class="player">Player 8</li>
+        <li class="player">Player 9</li>
+        <li class="player">Player 10</li>
+      </ul>
+      <button class="draw-btn">Show Winner</button>
+      <div id="winner"></div>
+    </section>
+    
+    <!--SLIDER-->
+    <section id="section12" class="section" data-dark data-scroll-spy>
+      <h2>Slider</h2>
+  
+      <div class="slides-container">
+        <div class="slide active">
+          <img src="https://picsum.photos/id/130/400/400" alt="animals">
+        </div>
+        <div class="slide">
+          <h4>Slide 2</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta adipisci, facere tempore quos voluptas quisquam harum ducimus? Aliquam accusamus esse in similique? Ab vitae unde porro illum esse est pariatur?
+          </p>
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/id/16/400/400" alt="nature">
+        </div>
+        <div class="slide">
+          <h4>Slide 4</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta adipisci, facere tempore quos voluptas quisquam harum ducimus? Aliquam accusamus esse in similique? Ab vitae unde porro illum esse est pariatur?
+          </p>
+        </div>
+  
+        <div class="slider-btns">
+          <a href="#" class="prev">&laquo;</a>
+          <a href="#" class="next">&raquo;</a>
+        </div>
+      </div>
+    </section>
+     
+    <!--SMART VIDEO-->
+    <section id="section13" class="section" data-dark data-scroll-spy>
+      <h2>Smart Video</h2>
+      <p>The video will autoplay when the window's vision be at least at 50% of the video's height. It will be paused if the window is changed or if the video gets out of sight</p>
+
+      <video src="./assets/video.mp4" mute loop controls data-video></video>
+    </section>
+
+    <!--FORM VALIDATIONS-->
+    <section id="section14" class="section" data-dark data-scroll-spy>
+      <h2>Form Validations</h2>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Only alphabetic characters and spaces are accepted" required>
+        <input type="email" name="email" placeholder="Your email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Invalid email direction" required>
+        <input type="text" name="subject" placeholder="Subject or title" title="Title is required" required>
+
+        <textarea name="message" cols="50" rows="5" placeholder="Your message" data-pattern="^[\s\S]{1,255}$" title="The message can not be longer than 255 characters" required></textarea>
+
+        <input type="submit" value="Send">
+
+        <div class="contact-form-loader none">
+          <img src="./assets/oval.svg" alt="loader">
+        </div>
+        <div class="contact-form-response none">
+          <p>Your message has been delivered</p>
+        </div>
+      </form>
+    </section>
+
+    <!--TEXT SPEAKER-->
+    <section id="section15" class="section" data-dark data-scroll-spy>
+      <h2>Speaker</h2>
+      <p>Write text and choose a voice from the list</p>
+
+      <select id="speech-select">
+        <option value="">--- Select voice</option>
+      </select>
+      <br><br>
+      <textarea id="speech-text" cols="50" rows="12"></textarea>
+      <br>
+      <button id="speech-btn">Read Text</button>
+    </section>
+  </main>
+  
+  <script src="./DOM.js" type="module"></script>
+</body>
+</html>
